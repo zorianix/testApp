@@ -2,7 +2,8 @@ FROM centos:7
 ENV HTTP_PROXY="http://10.115.27.54:3128"
 ENV HTTPS_PROXY="http://10.115.27.54:3128"
 
-RUN yum -y update
+RUN sysctl -w net.ipv6.conf.all.disable_ipv6=1
+RUN yum list update
 RUN yum -y install epel-release
 RUN yum -y install python-pip
 RUN yum clean all 
