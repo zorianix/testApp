@@ -10,8 +10,8 @@ def home():
 
 @app.route('/hello/', methods=['GET'])
 def hello():
-    name = request.args.get('yourname', '')
-    email = request.args.get('youremail', '')
+    name = request.args.get('name', '')
+    email = request.args.get('email', '')
     return render_template('flag.html', name=name, email=email)
 
 if __name__ == '__main__':
