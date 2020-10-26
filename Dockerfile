@@ -1,6 +1,7 @@
+FROM centos:7
 ENV HTTP_PROXY="http://10.115.27.54:3128"
 ENV HTTPS_PROXY="http://10.115.27.54:3128"
-FROM centos:7
+
 RUN yum -y install python-pip
 
 EXPOSE 5000
