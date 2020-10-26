@@ -1,4 +1,5 @@
 FROM centos:7
+RUN yum -y install python-pip
 
 EXPOSE 5000
 
