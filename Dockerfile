@@ -1,10 +1,5 @@
 FROM centos:7
 
-RUN yum -y update
-RUN yum -y install epel-release
-RUN yum -y install python-pip
-RUN yum clean all 
-
 EXPOSE 5000
 
 RUN mkdir /opt/flaskapp
