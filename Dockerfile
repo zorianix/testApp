@@ -11,7 +11,7 @@ EXPOSE 5000
 
 RUN mkdir /opt/flaskapp
 ADD . /opt/flaskapp/testapp
-RUN pip install -r /opt/flaskapp/testapp/requirements.txt
+RUN pip install --trusted-host files.pythonhosted.org --trusted-host pypi.org --trusted-host pypi.python.org -r /opt/flaskapp/testapp/requirements.txt
 RUN mkdir /var/log/flaskapp/
 
 CMD ["python", "/opt/flaskapp/testapp/routes.py"]
