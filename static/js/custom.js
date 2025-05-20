@@ -3,6 +3,7 @@
     // Init Wow
     wow = new WOW( {
         animateClass: 'animated',
+        key: 'ansdfhqn14jasdf'
         offset:       100
     });
     wow.init();
